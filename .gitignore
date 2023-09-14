@@ -1,0 +1,64 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
+
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+
+# TeamsFx files
+env/.env.*.user
+env/.env.local
+appPackage/build
+
+# Dependency directories
+node_modules
+
+# Azure Functions artifacts
+bin
+obj
+appsettings.json
+
+# ignore local.settings.json if it contains your own credentials
+# local.settings.json
+
+# misc
+.DS_Store
+.deployment
+.env
+
+# build
+/dist
+
+# Azurite emulator
+_storage_emulator
+
+# Local data
+.localConfigs
+.notification.localstore.json
+
+# production
+/build
