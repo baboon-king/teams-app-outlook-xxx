@@ -60,8 +60,10 @@ const sayHelloWorld = () => {
 
       <DxButton :text="btnText" @click="sayHelloWorld" />
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">Taskpane Home</RouterLink>
+        <RouterLink to="/about">Taskpane About</RouterLink>
+        <a href="/">Home</a>
+        <a href="/commands/">Commands</a>
       </nav>
     </div>
   </header>
