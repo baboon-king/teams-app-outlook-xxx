@@ -8,8 +8,9 @@
     "msoffice.microsoft-office-add-in-debugger",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "Vue.volar",
-    "Vue.vscode-typescript-vue-plugin"
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin",
+    "antfu.unocss"
   ],
   // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
   "unwantedRecommendations": []

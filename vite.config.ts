@@ -3,6 +3,7 @@ import { fileURLToPath, URL } from "node:url";
 import { getHttpsServerOptions } from "office-addin-dev-certs";
 
 import { defineConfig } from "vite";
+import UnoCSS from "unocss/vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import { resolve } from "node:path";
@@ -15,7 +16,7 @@ async function getHttpsOptions() {
 // https://vitejs.dev/config/
 export default defineConfig(async ({ command, mode }) => {
   return {
-    plugins: [vue(), vueJsx()],
+    plugins: [vue(), vueJsx(), UnoCSS()],
     resolve: {
       alias: {
         "@": fileURLToPath(new URL("./src", import.meta.url)),
