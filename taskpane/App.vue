@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
 import DxButton from "devextreme-vue/button";
 import { ref } from "vue";
+import { useOffice } from "@/officejs";
 
 const btnText = ref("Click me");
 const sayHelloWorld = () => {
@@ -15,6 +16,9 @@ const sayHelloWorld = () => {
     return;
   }
 };
+
+const { isReady, isOfficeOnline } = useOffice();
+console.log(useOffice());
 </script>
 
 <template>
@@ -68,6 +72,10 @@ const sayHelloWorld = () => {
     </div>
   </header>
 
+  <div v-if="isReady">Office is Ready</div>
+  <div v-else>Office is not Ready</div>
+
+  <div v-if="isOfficeOnline">isOfficeOnline</div>
   <RouterView />
 </template>
 
